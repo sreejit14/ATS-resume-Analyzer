@@ -28,16 +28,27 @@ An intelligent web application designed to help job seekers optimize their resum
 ## Project Structure
 
 ATS_RESUME/
+
 ├── ats_optimizer/ # Django project settings
+
 ├── analyzer/ # Main Django app
+
 │ ├── forms/ # Form definitions
+
 │ ├── models.py # Database models
+
 │ ├── services.py # Business logic for resume analysis
+
 │ ├── utils/ # NLP and text extraction utilities
+
 │ ├── views/ # Views to handle requests
+
 │ └── urls.py # App-level URL routing
+
 ├── static/ # CSS, JS, and image files
+
 ├── templates/ # HTML templates
+
 └── manage.py
 
 ### Prerequisites
