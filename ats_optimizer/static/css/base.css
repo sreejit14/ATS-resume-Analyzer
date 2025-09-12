@@ -1,0 +1,118 @@
+/* Base styles for dark theme */
+:root {
+    --primary-color: #121820;
+    --secondary-color: #1e2832;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    --light-gray: #1c2227;
+    --dark-gray: #0f1419;
+    --text-primary: #ffffff;
+    --text-secondary: #b8c5d1;
+    --text-muted: #8a9ba8;
+    --border-color: #2d3748;
+    --border-radius: 0.5rem;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+    --box-shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+    background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-gray) 100%);
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color) !important;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-primary) !important;
+}
+
+/* Main content */
+main {
+    min-height: calc(100vh - 140px);
+    padding: 2rem 0;
+}
+
+/* Cards */
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-lg);
+    color: var(--text-primary);
+}
+
+.card-header {
+    background-color: var(--primary-color) !important;
+    color: var(--text-primary) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Buttons */
+.btn {
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+
+/* Form controls */
+.form-control, .form-select {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--secondary-color);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.8 !important;
+}
+
+
+.form-select {
+    color: var(--text-muted);
+}
+
+.form-select option {
+    color: var(--text-primary);
+    background-color: var(--secondary-color);
+}
+
+/* Text & links */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
